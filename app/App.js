@@ -19,14 +19,14 @@ const Transactions = createBottomTabNavigator({
           tabBarIcon: ({ focused, tintcolor }) => {}
         }
       },
-    NEM: {        
+    NEM: {
         screen: NEMTransaction,
         navigationOptions:{
           tabBarIcon: ({ focused, tintcolor }) => {}
         }
       }
 }, {
-    
+
 		tabBarPosition: "top",
 		swipeEnabled: true,
 		animationEnabled: true,
@@ -36,12 +36,13 @@ const Transactions = createBottomTabNavigator({
 			showIcon: false,
 			upperCaseLabel: false,
 			scrollEnabled: false
-			
+
 		}
 })
 
+
 const TabNavigator = createMaterialTopTabNavigator({
-    Main: Main, 
+    Main: Main,
     Transaction: Transactions
 }, {
     lazy: true,
@@ -49,7 +50,7 @@ const TabNavigator = createMaterialTopTabNavigator({
         labelStyle: {
           fontSize: 12,
           color: 'black'
-        },        
+        },
         style: {
           backgroundColor: 'white',
         },
